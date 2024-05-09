@@ -18,6 +18,14 @@ namespace Exercises
             }
         }
 
-        
+        public static void RemoveRangeItems(List<char> list)
+        {
+            list.RemoveRange(1, 3);
+
+            foreach (var element in list)
+            {
+                Console.WriteLine(element);
+            }
+        }
     }
 }
