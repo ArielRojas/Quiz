@@ -24,6 +24,10 @@ namespace Exercises
 
             Console.WriteLine("Remove range from list:");
             LinqExercises.RemoveRangeItems(listChars);
+
+            Console.WriteLine("Frequency character:");
+            string word = "apple";
+            LinqExercises.ShowFrequency(word);
         }
     }
 }
