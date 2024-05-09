@@ -4,7 +4,13 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            List<string> list = new List<string>();
+            list.Add("Biscuit");
+            list.Add("Honey");
+            list.Add("Brade");
+            list.Add("Butter");
+
+            LinqExercises.ShowInAscendingOrder(list);
         }
     }
 }
