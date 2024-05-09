@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.Net;
 
 namespace Exercises
 {
@@ -28,6 +29,15 @@ namespace Exercises
             Console.WriteLine("Frequency character:");
             string word = "apple";
             LinqExercises.ShowFrequency(word);
+
+            List<int> listInteger = new List<int>();
+            listInteger.Add(10);
+            listInteger.Add(48);
+            listInteger.Add(52);
+            listInteger.Add(94);
+            listInteger.Add(63);
+            Console.WriteLine("Greather than:");
+
         }
     }
 }
