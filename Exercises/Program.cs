@@ -36,8 +36,8 @@ namespace Exercises
             listInteger.Add(52);
             listInteger.Add(94);
             listInteger.Add(63);
-            Console.WriteLine("Greather than:");
-
+            Console.WriteLine("Greather than 59:");
+            LinqExercises.ShowGreatherThanGivenNumber(listInteger, 59);
         }
     }
 }

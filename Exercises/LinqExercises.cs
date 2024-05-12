@@ -43,5 +43,15 @@ namespace Exercises
                 Console.WriteLine(String.Format($"{counter.Letter}, {counter.Counter}"));
             }
         }
+
+        public static void ShowGreatherThanGivenNumber(List<int> list, int number)
+        {
+            var result = list.Where(x => x > number);
+
+            foreach (var x in result)
+            {
+                Console.WriteLine(x);
+            }
+        }
     }
 }
