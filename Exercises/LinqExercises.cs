@@ -53,5 +53,15 @@ namespace Exercises
                 Console.WriteLine(x);
             }
         }
+
+        public static void ShowStringStartAndEndWithSpecificCharacter(List<string> list, char start, char end)
+        {
+            var result = list.Where(value => value.StartsWith(start) && value.EndsWith(end));
+
+            foreach (var value in result)
+            {
+                Console.WriteLine(value);
+            }
+        }
     }
 }
