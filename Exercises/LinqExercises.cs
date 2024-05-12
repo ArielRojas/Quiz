@@ -76,5 +76,10 @@ namespace Exercises
                 Console.WriteLine(value);
             }
         }
+
+        public static void CountFileExtensions(List<string> list)
+        {
+            
+        }
     }
 }

@@ -55,6 +55,19 @@ namespace Exercises
             string inputValue = "this IS a STRING";
             Console.WriteLine("find uppercase words in a string:");
             LinqExercises.FindUppercaseWordsInString(inputValue);
+
+            List<string> listFilesWithExtension = new List<string>();
+            listFilesWithExtension.Add("aaa.frx");
+            listFilesWithExtension.Add("bbb.TXT");
+            listFilesWithExtension.Add("xyz.dbf");
+            listFilesWithExtension.Add("abc.pdf");
+            listFilesWithExtension.Add("aaaa.PDF");
+            listFilesWithExtension.Add("xyz.frt");
+            listFilesWithExtension.Add("abc.xml");
+            listFilesWithExtension.Add("ccc.txt");
+            listFilesWithExtension.Add("zzz.txt");
+            Console.WriteLine("Count file extensions: ");
+
         }
     }
 }
