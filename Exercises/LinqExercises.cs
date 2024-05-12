@@ -63,5 +63,18 @@ namespace Exercises
                 Console.WriteLine(value);
             }
         }
+
+        public static void FindUppercaseWordsInString(string inputValue)
+        {
+            var words = inputValue.Split(' ');
+            var result = words.Where(word =>
+                word.All(character =>
+                    char.IsUpper(character)));
+
+            foreach (var value in result)
+            {
+                Console.WriteLine(value);
+            }
+        }
     }
 }

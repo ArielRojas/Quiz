@@ -51,6 +51,10 @@ namespace Exercises
             listWords.Add("PARIS");
             Console.WriteLine("Searching string starts with A and ends with M:");
             LinqExercises.ShowStringStartAndEndWithSpecificCharacter(listWords, 'A', 'M');
+
+            string inputValue = "this IS a STRING";
+            Console.WriteLine("find uppercase words in a string:");
+            LinqExercises.FindUppercaseWordsInString(inputValue);
         }
     }
 }
