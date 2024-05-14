@@ -79,7 +79,17 @@ namespace Exercises
 
         public static void CountFileExtensions(List<string> list)
         {
-            
+            var result = list.GroupBy(element => element.ToLower().Split('.')[1])
+                          .Select(counter =>
+                          new {
+                              Extension = counter.Key,
+                              Counter = counter.Count()
+                          });
+
+            foreach (var counter in result)
+            {
+                Console.WriteLine($"{counter.Counter} File(s) with .{counter.Extension} Extension");
+            }
         }
     }
 }

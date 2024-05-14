@@ -67,7 +67,7 @@ namespace Exercises
             listFilesWithExtension.Add("ccc.txt");
             listFilesWithExtension.Add("zzz.txt");
             Console.WriteLine("Count file extensions: ");
-
+            LinqExercises.CountFileExtensions(listFilesWithExtension);
         }
     }
 }
